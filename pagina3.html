@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tabla Informativa - Energías Renovables Inteligentes</title>
+  <style>
+    /* === ESTILOS GENERALES === */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #1E3A8A, #0F172A);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+      max-width: 900px;
+    }
+
+    header h1 {
+      font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+      text-shadow: 2px 2px #000;
+      color: #60A5FA;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: clamp(1rem, 2vw, 1.1rem);
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* === TABLA === */
+    .table-wrapper {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    table {
+      min-width: 600px;
+      max-width: 900px;
+      margin: auto;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.05);
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(96, 165, 250, 0.3);
+      backdrop-filter: blur(5px);
+    }
+
+    th, td {
+      padding: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      text-align: left;
+      word-wrap: break-word;
+    }
+
+    th {
+      background-color: rgba(96, 165, 250, 0.2);
+      font-size: 1.1rem;
+      color: #ffffff;
+    }
+
+    td {
+      font-size: 1rem;
+      color: #e2e8f0;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* === BOTONES DE NAVEGACIÓN === */
+    .navigation-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 2.5rem;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: #1E3A8A;
+      border-radius: 10px;
+      font-weight: bold;
+      border: 2px solid #1E3A8A;
+      transition: all 0.3s ease;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: #000000;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    /* === PIE DE PÁGINA === */
+    footer {
+      margin-top: auto;
+      text-align: center;
+      padding: 1.5rem 1rem 0.8rem;
+      font-size: 0.9rem;
+      color: #94A3B8;
+      opacity: 0.8;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 768px) {
+      table {
+        font-size: 0.95rem;
+      }
+
+      th, td {
+        padding: 0.8rem;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+      }
+
+      .navigation-buttons a {
+        width: 100%;
+        text-align: center;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      header h1 {
+        font-size: 1.4rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      th {
+        font-size: 1rem;
+      }
+
+      td {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Energías Renovables Inteligentes</h1>
+  
+ </header>
+
+  <div class="table-wrapper">
+    <table>
+      <tr>
+        <th>Concepto</th>
+        <th>Definición</th>
+        <th>Ejemplo / Explicación</th>
+      </tr>
+      <tr>
+        <td>Energía Solar Inteligente</td>
+        <td>Uso de paneles solares conectados a sistemas de monitoreo y gestión digital.</td>
+        <td>Paneles con sensores que ajustan su orientación automáticamente.</td>
+      </tr>
+      <tr>
+        <td>Red Eléctrica Inteligente</td>
+        <td>Infraestructura que optimiza el flujo energético mediante datos en tiempo real.</td>
+        <td>Distribución automática según demanda y generación local.</td>
+      </tr>
+      <tr>
+        <td>Almacenamiento Inteligente</td>
+        <td>Uso de baterías avanzadas que gestionan el uso eficiente de la energía acumulada.</td>
+        <td>Sistemas domésticos que almacenan energía solar para uso nocturno.</td>
+      </tr>
+      <tr>
+        <td>Sensorización Ambiental</td>
+        <td>Monitoreo constante de variables climáticas para ajustar producción energética.</td>
+        <td>Sensores que regulan turbinas eólicas según velocidad del viento.</td>
+      </tr>
+      <tr>
+        <td>Domótica Energética</td>
+        <td>Automatización del consumo energético en hogares y edificios inteligentes.</td>
+        <td>Luces y climatización que se ajustan según presencia y temperatura.</td>
+      </tr>
+      <tr>
+        <td>Blockchain Energético</td>
+        <td>Tecnología que permite transacciones seguras entre productores y consumidores de energía.</td>
+        <td>Venta directa de excedentes solares entre vecinos.</td>
+      </tr>
+      <tr>
+        <td>Movilidad Renovable</td>
+        <td>Uso de fuentes limpias para alimentar vehículos eléctricos e híbridos.</td>
+        <td>Estaciones de carga solar para bicicletas y autos eléctricos.</td>
+      </tr>
+      <tr>
+        <td>Gestión Predictiva</td>
+        <td>Algoritmos que anticipan el consumo y ajustan la producción energética.</td>
+        <td>Software que reduce el uso de energía en horas pico.</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="pagina2.html">Atrás</a>
+    <a href="formulario.html">siguiente</a>
+  </div>
+
+  <footer>
+    © 2025 Jeffersson Alexander| Proyecto educativo sobre energías renovables inteligentes. 
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información General</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #003366);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 51, 102, 0.3);
+    }
+
+    .section {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      gap: 2rem;
+    }
+
+    .section:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+
+    .text {
+      flex: 1 1 300px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .imagen-parrafo {
+      flex: 1 1 300px;
+      max-width: 250px;
+      height: auto;
+      border: 2px dashed #00aaff;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: #003366;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.5);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section {
+        flex-direction: column;
+      }
+
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .imagen-parrafo {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Energías Renovables Inteligentes</h1>
+  </header>
+
+  <div class="section">
+    <img src="imagenes/img1.jpg" alt="Panel solar inteligente" class="imagen-parrafo">
+    <div class="text">
+      <br><br>🔍 <strong>energía sustentable:</strong>
+      La energía sustentable es aquella que satisface las necesidades energéticas del presente sin comprometer la capacidad de las futuras generaciones para satisfacer las suyas. Es un concepto clave dentro del desarrollo sostenible, ya que busca equilibrar el uso de recursos naturales con la protección del medio ambiente y el bienestar social a largo plazo.
+
+      ⚡ Características principales:
+      - Renovable: proviene de fuentes que se regeneran naturalmente, como el sol, el viento, el agua o la biomasa.
+      - Bajo impacto ambiental: genera mínimas emisiones contaminantes y no agota los recursos del planeta.
+      - Eficiente: promueve el uso racional de la energía, reduciendo pérdidas y optimizando el consumo.
+      - Equitativa: busca garantizar el acceso universal a la energía, especialmente en comunidades vulnerables.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img2.jpg" alt="Turbina eólica inteligente" class="imagen-parrafo">
+    <div class="text">
+      <br><br>🧠 <strong>energía eólica:</strong>
+      La energía eólica aprovecha la fuerza del viento para generar electricidad mediante aerogeneradores. Es una fuente limpia, renovable y cada vez más eficiente gracias a sistemas inteligentes que ajustan su funcionamiento según las condiciones climáticas.
+
+      ✅ Ventajas:
+      - No contamina ni emite gases de efecto invernadero.
+      - Es inagotable y reduce la dependencia de combustibles fósiles.
+      - Puede instalarse en zonas rurales o aisladas.
+
+      ⚠ Desventajas:
+      - Depende de la intensidad y constancia del viento.
+      - Puede afectar visualmente el paisaje.
+      - Requiere inversión inicial alta y mantenimiento técnico.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img3.jpg" alt="Red eléctrica inteligente" class="imagen-parrafo">
+    <div class="text">
+      <br><br>🌍 <strong>energía hidroeléctrica:</strong>
+      La energía hidroeléctrica se obtiene del movimiento del agua, especialmente en ríos y embalses. Es una fuente confiable que permite generar grandes cantidades de electricidad de forma limpia.
+
+      💧 ¿Cómo funciona?
+      - Se construyen presas que almacenan agua en altura.
+      - Al liberar el agua, esta cae por gravedad y pasa por turbinas hidráulicas.
+      - Las turbinas convierten la energía del agua en energía mecánica, que luego se transforma en energía eléctrica mediante generadores.
+
+      ✅ Ventajas:
+      - No emite gases contaminantes.
+      - Es constante y confiable.
+      - Puede almacenar energía para usarla cuando se necesite.
+
+      ⚠ Desventajas:
+      - Impacto ambiental en ecosistemas acuáticos.
+      - Desplazamiento de comunidades por construcción de presas.
+      - Requiere grandes inversiones y estudios geográficos.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img4.jpg" alt="Tecnología renovable integrada" class="imagen-parrafo">
+    <div class="text">
+      <br><br>📘 <strong>Información general:</strong>
+      Las energías renovables inteligentes combinan fuentes limpias como la solar, eólica o hidráulica con tecnologías avanzadas de automatización, sensores y redes eléctricas adaptativas. Este enfoque permite una gestión eficiente, autónoma y sostenible del consumo energético en hogares, industrias y comunidades.
+
+      🌐 Su objetivo es transformar el modelo energético tradicional en uno más justo, descentralizado y resiliente, reduciendo emisiones y democratizando el acceso a la energía.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img5.jpg" alt="Panel solar con IA" class="imagen-parrafo">
+    <div class="text">
+      <br><br>🚀 <strong>Avances actuales:</strong>
+      En 2025, las energías renovables inteligentes han integrado tecnologías como:
+      - Inteligencia Artificial (IA) para predecir demanda y ajustar producción en tiempo real.
+      - Celdas solares de perovskita cuántica, con eficiencia récord y mayor estabilidad.
+      - Redes inteligentes (Smart Grids) que distribuyen energía según consumo real y priorizan fuentes limpias.
+      - Almacenamiento avanzado con baterías de litio y sodio que permiten autonomía energética en zonas rurales.
+
+      Estos avances están reduciendo costos, mejorando la eficiencia y acelerando la transición energética global.
+    </div>
+  </div>
+
+  <div class="section">
+    <img src="imagenes/img6.jpg" alt="Futuro energético sostenible" class="imagen-parrafo">
+    <div class="text">
+      <br><br>🔮 <strong>Avances a futuro:</strong>
+      Para 2030, se proyecta una revolución energética basada en:
+      - Electrotecnología: automatización total del uso energético en hogares, vehículos y ciudades.
+      - Integración de blockchain para trazabilidad y transparencia en redes eléctricas.
+      - Baterías inteligentes que equilibran la red y almacenan excedentes sin pérdidas.
+      - Transición global sin combustibles fósiles, impulsada por eficiencia económica y conciencia ambiental.
+
+      El futuro de las energías renovables será más conectado, descentralizado y accesible para todos.
+    </div>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="index.html">Atrás</a>
+    <a href="pagina2.html">Siguiente</a>
+  </div>
+
+  <footer>
+    &copy; 2025 Plataforma Educativa de Energías Renovables | Diseñado por jefferson Alexander sección 2-1
+  </footer>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Información del Creador</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #000000, #003366);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 51, 102, 0.3);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px #000;
+    }
+
+    .creator-box {
+      background-color: rgba(255, 255, 255, 0.08);
+      margin: 2rem auto;
+      width: 90%;
+      max-width: 550px;
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 0 12px rgba(0, 170, 255, 0.3);
+      text-align: center;
+    }
+
+    .creator-box h2 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      color: #00aaff;
+    }
+
+    .creator-box p {
+      margin: 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .navigation-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .navigation-buttons a {
+      text-decoration: none;
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: #003366;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .navigation-buttons a:hover {
+      background-color: #00aaff;
+      color: white;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 0, 0.5);
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 600px) {
+      .navigation-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+
+      .navigation-buttons a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Información del Creador</h1>
+  </header>
+
+  <div class="creator-box">
+    <h2>Sobre el Proyecto</h2>
+    <p><strong>Nombre:</strong> Jefferson Alexander Soriano Garcia</p>
+    <p><strong>Rol:</strong> Estudiante de bachillerato con excelencia en tecnología, lógica electrónica y diseño funcional.</p>
+    <p><strong>Objetivo:</strong> Crear un sitio educativo sobre energías renovables inteligentes que combine estética, precisión técnica y conciencia ambiental.</p>
+    <p><strong>Correo:</strong> JEFFER@gmail.com</p>
+    <p><strong>Ubicación:</strong> El Salvador</p>
+  </div>
+
+  <div class="navigation-buttons">
+    <a href="formulario.html">Atrás</a>
+    <a href="index.html">Siguiente</a>
+  </div>
+
+  <footer>
+     &copy; 2025 Plataforma Educativa de Energías Renovables | Diseñado por jefferson Alexander sección 2-1
+  </footer>
+</body>
+</html>
